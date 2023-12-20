@@ -20,6 +20,15 @@ export const getUserPost = async (id) => {
     throw error;
   }
 };
+export const getAllPost = async () => {
+  try {
+    const response = await axios.get(`https://jsonplaceholder.typicode.com/posts`);
+    return response;
+  } catch (error) {
+    console.error('Error fetching data:', error);
+    throw error;
+  }
+};
 export const getCountryList = async () => {
   try {
     const response = await axios.get('https://worldtimeapi.org/api/timezone');
