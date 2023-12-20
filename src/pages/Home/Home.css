@@ -1,0 +1,43 @@
+.user-list {
+    text-align: center;
+}
+.user{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid black;
+    padding: 15px 12px;
+    font-size: 16px;
+    border-radius: 12px;
+    margin: 10px 0;
+    background-color: #bae7f9;
+    cursor: pointer;
+    box-shadow: 0 0 5px darkgrey;
+}
+.user h2 {
+    font-size: 16px;
+    margin: 0;
+    font-weight: normal;
+    color: black;
+}
+
+/* Media Query */
+@media screen and (max-width: 767px) {
+    .top {
+        flex-direction: column;
+        align-items: flex-start !important;
+    }
+    .dropdown {
+        margin-top: 10px;
+    }
+    .clock-container{
+        justify-content: space-between;
+    width: 100%;
+    }
+    .container {
+        padding: 10px;
+    }
+    .user-detail{
+        flex-direction: column;
+    }
+}
